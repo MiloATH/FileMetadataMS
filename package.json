@@ -1,0 +1,27 @@
+{
+  "name": "file-metadata-ms",
+  "version": "1.0.0",
+  "description": "Returns the metadata of a file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiloATH/FileMetadataMS.git"
+  },
+  "keywords": [
+    "metadata",
+    "api",
+    "file"
+  ],
+  "author": "Milo Hartsoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiloATH/FileMetadataMS/issues"
+  },
+  "homepage": "https://github.com/MiloATH/FileMetadataMS#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
