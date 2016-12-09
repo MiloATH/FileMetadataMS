@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>Image Search Abstraction Layer</title>
+    <title>File Metadata MS</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container">
-        <h1 class="header">Image Search Abstraction Layer</h1>
+        <h1 class="header">File Metadata MS</h1>
         <h5>
             By Milo Hartsoe. <a href="https://github.com/MiloATH/FileMetadataMS">Code on Github here</a>.
         </h5>
-        <form>
+        <form enctype="multipart/form-data" method="post" action='/upload'>
             <p>
-                Please specify a file, or a set of files:<br>
-                <input type="file" name="datafile" size="40">
+                Please specify a file<br>
+                <input type="file" name="file">
             </p>
             <div>
                 <input type="submit" value="Send">
