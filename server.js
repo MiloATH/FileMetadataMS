@@ -1,5 +1,5 @@
 var path = require('path');
-var multer = require('multer');
+var multer = require('multer');//Needed for file handling
 var upload = multer({
     dest: 'uploads/'
 });
@@ -18,14 +18,16 @@ app.get('/', function(req, res) {
     });
 });
 
+//upload files for metadata
 app.post('/upload', upload.single('file'), function(req, res) {
     var file = req.file;
     if (file) {
         var ret = {
             size: file.size,
-            encoding: file.encoding
+            encoding: file.encoding,
+            name: file.originalname,
+            mimetype: file.mimetype
         };
-        //console.log(file.size);
         res.json(ret);
     }
     else {
